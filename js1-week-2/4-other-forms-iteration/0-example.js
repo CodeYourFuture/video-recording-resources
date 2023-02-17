@@ -1,4 +1,4 @@
-/* 
+/*
 example 0
 
 Print the numbers 1 to 10, with each number on a separate line
@@ -13,5 +13,3 @@ Print the numbers 1 to 10, with each number on a separate line
 9
 10
 */
-
-
