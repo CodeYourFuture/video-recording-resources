@@ -1,6 +1,3 @@
-let user = {
-  name: "Nirmeet",
-  age: 24,
-};
+git@github.com:CodeYourFuture/video-recording-resources.git
 
 let userArray = ["Nirmeet", 24];
