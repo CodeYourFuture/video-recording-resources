@@ -1,42 +1,27 @@
-// This refers to the window
-console.log(this);
-
-// This refers to the window object
+/**
+ * In JavaScript, the "this" keyword refers to an object.
+ * The this keyword refers to different objects
+ * depending on how it is used:
+ */
 function helloThis() {
-  console.log("Inside a global function, this is ");
+  console.log(`Inside helloThis funct, "this" keyword is:`);
   console.log(this);
 }
 
-// Call the function helloThis to check results
-helloThis();
+// helloThis();
 
-// This refers to the child object. Will console log 20
-var student = {
-  studentName: "John Smith",
-  age: 10,
-  displayThisStudent: function () {
+function printName() {
+  console.log(`Student's name is ${this.fullName}`);
+}
+
+const student = {
+  fullName: "John Smith", // string
+  age: 10, // number
+  printThis: function () {
+    console.log(`Inside student object "this" points to:`);
     console.log(this);
   },
-  displayName: function () {
-    console.log(this.studentName);
-  },
-};
+  printName: printName,
+}
 
-// This refers to the investment object. Will log 5750
-var instructor = {
-  instructorName: "Jane Doe",
-  displayThisInstructor: function () {
-    console.log(this);
-  },
-  displayName: function () {
-    console.log(this.instructorName);
-  },
-};
-
-// Call the object methods to check results
-student.displayThisStudent();
-instructor.displayThisInstructor();
-
-// display the names
-student.displayName();
-instructor.displayName();
+student.printName();
