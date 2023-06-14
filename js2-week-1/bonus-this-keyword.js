@@ -96,7 +96,6 @@ const instructorArrow = {
   printThisArrow: printThisArrow,
 };
 
-// Similarly here it will display the "instructorArrow" object
 console.log(`---------------------------------------------------------------`);
 console.log(`Calling "printThisArrow" method of instructorArrow object`);
 instructorArrow.printThisArrow();
@@ -117,10 +116,10 @@ const carArrow = {
 
 console.log(`---------------------------------------------------------------`);
 console.log(`Calling "printThisArrow" method of carArrow object`);
-carArrow.printThisArrow(); // carArrow object
+carArrow.printThisArrow();
 console.log(`---------------------------------------------------------------`);
 console.log(
   `Calling "printThisArrow" method of carArrow.specificationsArrow object`
 );
-carArrow.specificationsArrow.printThisArrow(); // specifications object
+carArrow.specificationsArrow.printThisArrow();
 console.log(`---------------------------------------------------------------`);
